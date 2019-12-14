@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px 0px;
+  background: #F6EFF6;
+}
+
+.image-container {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container .navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background: #F6EFF6;
+}
+
+.app-container .navigation .whishlist-container button {
+  background: #a35ca2;
+  color: #F6EFF6;
+  border: none;
+  padding: 7.5px 12.5px;
+}
+
+.app-container .navigation .input-navigation {
+  border: 2px solid #a35ca2;
+  padding-left: 10px;
+}
+
+.app-container .homepage-bottom {
+  display: flex;
+}
+
+.app-container .homepage-bottom .meals-container {
+  width: 80%;
+}
+
+.app-container .homepage-bottom .meals-container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-container .homepage-bottom .meals-container ul li {
+  width: 30%;
+  padding: 15px;
+}
+
+
+.app-container .homepage-bottom .categorySearchInput {
+  width: 20%;
+  background: #a35ca2;
+  color: #F6EFF6;
+}
+
+.app-container .homepage-bottom .categorySearchInput button {
+  border: none;
+  background: #a35ca2;
+  color: #F6EFF6;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.app-container .homepage-bottom .categorySearchInput button svg {
+  margin-left: 15px;
+  transform: translateY(2px);
+}
+
+.app-container .homepage-bottom .categorySearchInput .filter-list {
+  margin: 0px 15px;
+  background: #F6EFF6;
+}
+
+.app-container .homepage-bottom .categorySearchInput .filter-list li {
+  color: #a35ca2;
+  text-align: center;
+  padding: 5px 0px;
+  transition: all 0.3s;
+}
+
+.app-container .homepage-bottom .categorySearchInput .filter-list li:hover {
+  background: #a35ca2;
+  color: #F6EFF6;
+  cursor: pointer;
+}
+
+.app-container .homepage-bottom .categorySearchInput .filter-placeholder {
+  padding: 15px;
+}
+
+.meal-item-content {
+  padding: 15px;
+  background: #F6EFF6;
+}
+
+.meal-item-content .meal-title {
+  font-size: 16px;
+  padding: 10px 0px;
+  color: #a35ca2;
+}
+
+.meal-item-content .my-collapsible {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.meal-item-content .my-collapsible__toggle,
+.meal-item-content .add-to-wish {
+  display: inline-block;
+  margin: 15px 15px 15px 0px;
+  padding: 7.5px;
+  background: #a35ca2;
+  color: #F6EFF6;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.meal-item-content .meal-description p:first-child {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.whishlist-container .my-collapsible__content {
+  position: absolute;
+  right: 30px;
+}
+
+.whishlist-container .my-collapsible__content .my-collapsible__content-inner {
+  max-height: 260px;
+  overflow: auto;
+  background: #a35ca2;
+  color: #F6EFF6;
+  padding: 15px;
+}
